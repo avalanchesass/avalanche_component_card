@@ -8,7 +8,9 @@
  * <div class="o-grid o-grid--spaced">
  *   <div class="o-grid__item u-width--12 u-width--m--4">
  *     <div class="c-card">
- *       <img class="c-card__full" src="http://placehold.it/288x190" alt="">
+ *       <div class="c-card__full">
+ *         <img src="http://placehold.it/288x190" alt="">
+ *       </div>
  *       <h4>Lorem Ipsum</h4>
  *       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
  *     </div>
@@ -16,7 +18,9 @@
  *   <div class="o-grid__item u-width--12 u-width--m--4">
  *     <div class="c-card">
  *       <h4>Lorem Ipsum</h4>
- *       <img class="c-card__full" src="http://placehold.it/288x190" alt="">
+ *       <div class="c-card__full">
+ *         <img src="http://placehold.it/288x190" alt="">
+ *       </div>
  *       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
  *     </div>
  *   </div>
@@ -24,7 +28,9 @@
  *     <div class="c-card">
  *       <h4>Lorem Ipsum</h4>
  *       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
- *       <img class="c-card__full" src="http://placehold.it/288x190" alt="">
+ *       <div class="c-card__full">
+ *         <img src="http://placehold.it/288x190" alt="">
+ *       </div>
  *     </div>
  *   </div>
  * </div>
@@ -43,6 +49,7 @@
   &:last-child {
     margin-bottom: -$spacing-s;
   }
+  * + &,
   + * {
     margin-top: strip-unit($spacing-m) * 1rem;
   }

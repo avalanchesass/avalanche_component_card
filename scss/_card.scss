@@ -8,49 +8,39 @@
  * <div class="o-grid o-grid--spaced">
  *   <div class="o-grid__item u-width--12 u-width--m--4">
  *     <div class="c-card">
- *       <div class="c-card__full">
- *         <img src="http://placehold.it/288x190" alt="">
+ *       <img class="c-card__figure" src="http://placehold.it/288x190" alt="">
+ *       <div class="o-island">
+ *         <h4>Lorem Ipsum</h4>
+ *         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
  *       </div>
- *       <h4>Lorem Ipsum</h4>
- *       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
  *     </div>
  *   </div>
  *   <div class="o-grid__item u-width--12 u-width--m--4">
  *     <div class="c-card">
- *       <h4>Lorem Ipsum</h4>
- *       <div class="c-card__full">
- *         <img src="http://placehold.it/288x190" alt="">
+ *       <div class="o-island">
+ *         <h4>Lorem Ipsum</h4>
  *       </div>
- *       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+ *       <img class="c-card__figure" src="http://placehold.it/288x190" alt="">
+ *       <div class="o-island">
+ *         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+ *       </div>
  *     </div>
  *   </div>
  *   <div class="o-grid__item u-width--12 u-width--m--4">
  *     <div class="c-card">
- *       <h4>Lorem Ipsum</h4>
- *       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
- *       <div class="c-card__full">
- *         <img src="http://placehold.it/288x190" alt="">
+ *       <div class="o-island">
+ *         <h4>Lorem Ipsum</h4>
+ *         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
  *       </div>
+ *       <img class="c-card__figure" src="http://placehold.it/288x190" alt="">
  *     </div>
  *   </div>
  * </div>
  */
 .c-card {
-  padding: $spacing-s;
-  box-shadow: 0 0 0.5em rgba($cs-grey-c, 0.5);
+  border: 1px solid $cs-grey-b;
 }
 
-.c-card__full {
-  margin-right: -$spacing-s;
-  margin-left: -$spacing-s;
-  &:first-child {
-    margin-top: -$spacing-s;
-  }
-  &:last-child {
-    margin-bottom: -$spacing-s;
-  }
-  * + &,
-  + * {
-    margin-top: strip-unit($spacing-m) * 1rem;
-  }
+.c-card__figure {
+  margin-top: 0;
 }

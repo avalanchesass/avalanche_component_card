@@ -20,6 +20,7 @@
   ],
   "dependencies": {
     "avalanche_function_strip_unit": "^2.0.0",
-    "avalanche_system_variable": "^2.0.0"
+    "avalanche_system_variable": "^2.0.0",
+    "avalanche_object_island": "^2.0.0"
   }
 }

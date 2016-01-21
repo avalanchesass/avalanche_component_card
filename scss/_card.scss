@@ -34,11 +34,10 @@ A card is a flexible and extensible content container.
 ```
 */
 .c-card {
-  border: 1px solid map-get($cs-grey, a);
-  background-color: #fff;
+  @include c-card();
 }
 
 .c-card__figure {
-  margin-top: 0;
+  @include c-card-figure();
 }
 /* end extract component_card.css */

@@ -1,46 +1,44 @@
-/**
- * Card
- *
- * A card is a flexible and extensible content container.
- *
- * @level X.X.
- * @markup
- * <div class="o-grid o-grid--spaced">
- *   <div class="o-grid__item u-width--12 u-width--m--4">
- *     <div class="c-card">
- *       <img class="c-card__figure" src="http://placehold.it/288x190" alt="">
- *       <div class="o-island">
- *         <h4>Lorem Ipsum</h4>
- *         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
- *       </div>
- *     </div>
- *   </div>
- *   <div class="o-grid__item u-width--12 u-width--m--4">
- *     <div class="c-card">
- *       <div class="o-island">
- *         <h4>Lorem Ipsum</h4>
- *       </div>
- *       <img class="c-card__figure" src="http://placehold.it/288x190" alt="">
- *       <div class="o-island">
- *         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
- *       </div>
- *     </div>
- *   </div>
- *   <div class="o-grid__item u-width--12 u-width--m--4">
- *     <div class="c-card">
- *       <div class="o-island">
- *         <h4>Lorem Ipsum</h4>
- *         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
- *       </div>
- *       <img class="c-card__figure" src="http://placehold.it/288x190" alt="">
- *     </div>
- *   </div>
- * </div>
- */
+/* extract component_card.css */
+/*---
+title:   Card
+name:    component_card
+section: Component
+---
+
+A card is a flexible and extensible content container.
+
+```example:html
+<div class="c-card" style="width: 288px;">
+  <img class="c-card__figure" src="http://placehold.it/288x190" alt="">
+  <div class="o-island">
+    <h4>Lorem Ipsum</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+  </div>
+</div>
+<div class="c-card" style="width: 288px; margin-top: 1em;">
+  <div class="o-island">
+    <h4>Lorem Ipsum</h4>
+  </div>
+  <img class="c-card__figure" src="http://placehold.it/288x190" alt="">
+  <div class="o-island">
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+  </div>
+</div>
+<div class="c-card" style="width: 288px; margin-top: 1em;">
+  <div class="o-island">
+    <h4>Lorem Ipsum</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+  </div>
+  <img class="c-card__figure" src="http://placehold.it/288x190" alt="">
+</div>
+```
+*/
 .c-card {
-  border: 1px solid $cs-grey-b;
+  border: 1px solid map-get($cs-grey, a);
+  background-color: #fff;
 }
 
 .c-card__figure {
   margin-top: 0;
 }
+/* end extract component_card.css */

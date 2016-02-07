@@ -1,0 +1,47 @@
+@import 'avalanche_object_island';
+@import 'avalanche_component_card/variable';
+@import 'avalanche_component_card/mixin';
+
+/* extract component_card.css */
+/*---
+title:   Card
+name:    component_card
+section: Component
+---
+
+A card is a flexible and extensible content container.
+
+```example:html
+<div class="#{$c-card-namespace}" style="width: 288px;">
+  <img class="#{$c-card-namespace}__figure" src="http://placehold.it/288x190" alt="">
+  <div class="o-island">
+    <h4>Lorem Ipsum</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+  </div>
+</div>
+<div class="#{$c-card-namespace}" style="width: 288px; margin-top: 1em;">
+  <div class="#{$o-island-namespace}">
+    <h4>Lorem Ipsum</h4>
+  </div>
+  <img class="#{$c-card-namespace}__figure" src="http://placehold.it/288x190" alt="">
+  <div class="#{$o-island-namespace}">
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+  </div>
+</div>
+<div class="#{$c-card-namespace}" style="width: 288px; margin-top: 1em;">
+  <div class="#{$o-island-namespace}">
+    <h4>Lorem Ipsum</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+  </div>
+  <img class="#{$c-card-namespace}__figure" src="http://placehold.it/288x190" alt="">
+</div>
+```
+*/
+.#{$c-card-namespace} {
+  @include c-card($c-card-border-color, $c-card-background-color);
+}
+
+.#{$c-card-namespace}__figure {
+  @include c-card-figure();
+}
+/* end extract component_card.css */

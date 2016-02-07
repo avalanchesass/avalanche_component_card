@@ -1,0 +1,4 @@
+$c-card-namespace: '#{map-get($namespace, component)}card' !default;
+
+$c-card-border-color: map-get($cs-grey, a) !default;
+$c-card-background-color: #fff !default;

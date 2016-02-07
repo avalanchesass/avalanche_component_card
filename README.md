@@ -2,6 +2,7 @@
 A card is a flexible and extensible content container  
 https://github.com/avalanchesass/avalanche_component_card
 
+## About
 ### Author
 Markus Oberlehner  
 Twitter: https://twitter.com/MaOberlehner

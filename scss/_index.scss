@@ -2,6 +2,7 @@
 @import 'avalanchesass_component_card/variable';
 @import 'avalanchesass_component_card/mixin';
 
+/* extract component.css */
 /* extract component_card.css */
 /*---
 title:   Card
@@ -45,3 +46,4 @@ A card is a flexible and extensible content container.
   @include c-card-figure();
 }
 /* end extract component_card.css */
+/* end extract component.css */

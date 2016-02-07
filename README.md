@@ -1,4 +1,4 @@
-# avalanche_component_card
+# avalanchesass_component_card
 A card is a flexible and extensible content container  
 https://github.com/avalanchesass/avalanche_component_card
 

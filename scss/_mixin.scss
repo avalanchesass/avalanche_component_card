@@ -1,7 +1,10 @@
+@import 'avalanchesass_component_card/style_guide';
+
 /*---
 title:   Mixin
 name:    component_card_mixin
 section: component_card
+sort:    2
 ---
 
 ```css
@@ -11,7 +14,6 @@ c-card([$-border-color: map-get($cs-grey, a)[, $-background-color: #fff]])
 // Card figure.
 c-card-figure()
 ```
-
 ```css
 .foo {
   @include c-card();

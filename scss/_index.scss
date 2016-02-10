@@ -1,3 +1,4 @@
+@import 'avalanchesass_component_card/style_guide';
 @import 'avalanchesass_object_island';
 @import 'avalanchesass_component_card/variable';
 @import 'avalanchesass_component_card/mixin';
@@ -5,12 +6,11 @@
 /* extract component.css */
 /* extract component_card.css */
 /*---
-title:   Card
-name:    component_card
-section: Component
+title:   Example
+name:    component_card_example
+section: component_card
+sort:    1
 ---
-
-A card is a flexible and extensible content container.
 
 ```example:html
 <div class="#{$c-card-namespace}" style="width: 288px;">

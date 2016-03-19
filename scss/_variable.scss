@@ -1,0 +1,19 @@
+@import 'avalanchesass_component_card/style_guide';
+
+$c-card-namespace: '#{map-get($namespace, component)}card' !default;
+
+$c-card-border-color: map-get($cs-grey, a) !default;
+$c-card-background-color: #fff !default;
+/*---
+title:   Variable
+name:    component_card_variable
+section: component_card
+order:   3
+---
+
+```css
+$c-card-namespace: '#{$c-card-namespace}';
+$c-card-border-color: #{$c-card-border-color};
+$c-card-background-color: #{$c-card-background-color};
+```
+*/

@@ -1,6 +1,19 @@
 # avalanchesass_component_card
-A card is a flexible and extensible content container  
-https://github.com/avalanchesass/avalanche_component_card
+Flexible and extensible content container.
+
+## Install
+```
+npm install avalanchesass_component_card --save
+```
+
+## Basic usage
+```css
+/* Import the main file. */
+@import 'avalanchesass_component_card';
+
+/* Import just the mixin file. */
+@import 'avalanchesass_component_card/mixin';
+```
 
 ## About
 ### Author

@@ -45,5 +45,32 @@ order:   1
 .#{$c-card-namespace}__figure {
   @include c-card-figure();
 }
+
+@if $c-card-section {
+  /*---
+  title:   Section
+  name:    component_card_example_section
+  section: component_card_example
+  order:   1
+  ---
+
+  ```example:html
+<div class="#{$c-card-namespace}" style="width: 288px;">
+  <img class="#{$c-card-namespace}__figure" src="http://placehold.it/288x190" alt="">
+  <div class="o-island c-card__section">
+    <h4>Lorem Ipsum</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+  </div>
+  <div class="o-island c-card__section">
+    <h4>Lorem Ipsum</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+  </div>
+</div>
+  ```
+  */
+  .#{$c-card-namespace}__section {
+    @include c-card-section($c-card-section-border-color);
+  }
+}
 /* end extract component_card.css */
 /* end extract component.css */

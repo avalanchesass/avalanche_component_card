@@ -4,6 +4,9 @@ $c-card-namespace: '#{map-get($namespace, component)}card' !default;
 
 $c-card-border-color: map-get($cs-grey, a) !default;
 $c-card-background-color: #fff !default;
+
+$c-card-section: false !default;
+$c-card-section-border-color: $c-card-border-color !default;
 /*---
 title:   Variable
 name:    component_card_variable

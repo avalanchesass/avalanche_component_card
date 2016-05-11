@@ -13,6 +13,9 @@ c-card([$-border-color: map-get($cs-grey, a)[, $-background-color: #fff]])
 
 // Card figure.
 c-card-figure()
+
+// Card section.
+c-card-section([$-border-color: map-get($cs-grey, a)])
 ```
 */
 @mixin c-card($-border-color: map-get($cs-grey, a), $-background-color: #fff) {
@@ -24,4 +27,15 @@ c-card-figure()
 
 @mixin c-card-figure() {
   margin-top: 0;
+}
+
+@mixin c-card-section($-border-color: map-get($cs-grey, a)) {
+  @if $-border-color {
+    &:not(:first-child) {
+      border-top: 1px solid $-border-color;
+    }
+    .#{$c-card-namespace}__figure + & {
+      border-top: none;
+    }
+  }
 }

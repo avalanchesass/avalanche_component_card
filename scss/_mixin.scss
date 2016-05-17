@@ -16,6 +16,12 @@ c-card-figure()
 
 // Card section.
 c-card-section([$-border-color: map-get($cs-grey, a)])
+
+// Card list.
+c-card-list()
+
+// Card list item.
+c-card-list-item([$-spacing: map-get($spacing, xs)[, $-border-color: map-get($cs-grey, a)]])
 ```
 */
 @mixin c-card($-border-color: map-get($cs-grey, a), $-background-color: #fff) {
@@ -37,5 +43,22 @@ c-card-section([$-border-color: map-get($cs-grey, a)])
     .#{$c-card-namespace}__figure + & {
       border-top: none;
     }
+  }
+}
+
+@mixin c-card-list() {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@mixin c-card-list-item($-spacing: map-get($spacing, xs), $-border-color: map-get($cs-grey, a)) {
+  &:not(:first-child) {
+    padding-top: $-spacing;
+    @if $-border-color {
+      border-top: 1px solid $-border-color;
+    }
+  }
+  &:not(:last-child) {
+    padding-bottom: $-spacing;
   }
 }

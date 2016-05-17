@@ -7,6 +7,10 @@ $c-card-background-color: #fff !default;
 
 $c-card-section: false !default;
 $c-card-section-border-color: $c-card-border-color !default;
+
+$c-card-list: false !default;
+$c-card-list-item-border-color: $c-card-border-color !default;
+$c-card-list-item-spacing: map-get($spacing, xs) !default;
 /*---
 title:   Variable
 name:    component_card_variable

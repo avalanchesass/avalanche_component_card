@@ -72,5 +72,36 @@ order:   1
     @include c-card-section($c-card-section-border-color);
   }
 }
+
+@if $c-card-list {
+  /*---
+  title:   List
+  name:    component_card_example_list
+  section: component_card_example
+  order:   1
+  ---
+
+  ```example:html
+<div class="#{$c-card-namespace}" style="width: 288px;">
+  <img class="#{$c-card-namespace}__figure" src="http://placehold.it/288x190" alt="">
+  <div class="o-island">
+    <h4>Lorem Ipsum</h4>
+    <ul class="#{$c-card-namespace}__list">
+      <li class="#{$c-card-namespace}__list-item">List item 1</li>
+      <li class="#{$c-card-namespace}__list-item">List item 2</li>
+      <li class="#{$c-card-namespace}__list-item">List item 3</li>
+    </ul>
+  </div>
+</div>
+  ```
+  */
+  .#{$c-card-namespace}__list {
+    @include c-card-list();
+  }
+
+  .#{$c-card-namespace}__list-item {
+    @include c-card-list-item($c-card-list-item-spacing, $c-card-list-item-border-color);
+  }
+}
 /* end extract component_card.css */
 /* end extract component.css */
